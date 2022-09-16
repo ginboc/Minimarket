@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+     {background-image:url(imagenes/fondo1.jpg);
+       background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1 {
+    color: #0d14e0;
+    font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    text-shadow: hsl(246, 87%, 9%) 2px 2px 2px;
+}
+#logo
+{
+width: 10%;
+height: 10%;
+}
+#Encabezado{    
+    padding: 10px;
+    text-align: center;
+}
+#usuario{
+    padding: 15px;
+}
+#formulario{
+    padding: 10px;
+    padding-top: 50px;
+}
+
+
+html{
+    font-size: 65.5%;
+}
+
+:root{
+    --bkg-color_red_1:#b3494D;
+    --bkg-color_2_azul:#8ce0f5;
+    --bkg-color_3:#ffa600c7;
+    --bkg-color_4_white:white;
+    --bkg-color_5_green:rgb(36, 246, 36);
+    --bkg-color_6_black:black;
+    --bkg-color_7:#828581;
+}
+.color1{
+    background: var(--bkg-color_4_white);
+}
+.color2{
+    background: var( --bkg-color_2_azul)
+}
+.color3{
+    background: var(--bkg-color_5_green)
+}
+.container-fluid{
+    display: flex;
+    flex-wrap:wrap ;
+}
+body{
+    background: #ededed;
+}
+.home{
+    display: flex;
+    flex-wrap:wrap ;
+}
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+   
+}
+.in-flex:first-child{
+    flex: 2;
+    padding: 25px;
+    background: #fff;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.in-flex div{
+    padding: 25px;
+    background: #fff;
+    margin: 20px;
+}
+header{
+    background:var(--bkg-color_6_black)
+}
+.main{
+    background:var(--bkg-color_7)
+}
+.color_boton{
+    background: var(--bkg-color_4_white);
+}
+.carousel-inner .carousel-item{ 
+    height: 300px;
+    font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+}
+.tamaño{
+    margin: 5px;
+    padding: 25px;
+    background: var(--bkg-color_7);
+    font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.mb-3{
+    margin: 5px;
+    padding: 2px;
+    background: var(--bkg-color_7);
+}
+.card_sect{
+   
+    background: var(--bkg-color_7);
+    padding: 5px;
+    /*padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;*/
+    display: flex;
+}
+.card_sect .card{
+    margin: 5px;
+}
+.card_sect .card img{
+    height: 60px;
+    /*width: 250;*/
+}
