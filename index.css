@@ -4,16 +4,17 @@
 }
 
 body
-     {background-image:url(imagenes/fondo1.jpg);
-       background-repeat: no-repeat;
+    {background-image:url(imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 
 }
+
 h1 {
-    color: #0d14e0;
-    font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80px;
+    color: #00d1ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: hsl(246, 87%, 9%) 2px 2px 2px;
+    height: 30px;
 }
 #logo
 {
@@ -53,8 +54,11 @@ html{
     background: var( --bkg-color_2_azul)
 }
 .color3{
-    background: var(--bkg-color_5_green)
+    background: #00d1ff;
 }
+/* .color3{
+    background: var(--bkg-color_5_green)
+} */
 .container-fluid{
     display: flex;
     flex-wrap:wrap ;
@@ -69,7 +73,6 @@ body{
 .in-flex{
     flex: 1;
     min-width: 250px;
-   
 }
 .in-flex:first-child{
     flex: 2;
@@ -79,9 +82,20 @@ body{
     margin-bottom: 0px;
 }
 .in-flex div{
+    padding: 10px;
+    background: #fff;
+    margin: 20px;
+}
+.in-flex2{
+    flex: 1;
+    min-width: 250px;
+}
+.in-flex2:first-child{
+    flex: 2;
     padding: 25px;
     background: #fff;
     margin: 20px;
+    margin-bottom: 0px;
 }
 header{
     background:var(--bkg-color_6_black)
@@ -92,25 +106,137 @@ header{
 .color_boton{
     background: var(--bkg-color_4_white);
 }
+#carouselExampleSlidesOnly{
+    margin: 0;
+}
 .carousel-inner .carousel-item{ 
     height: 300px;
     font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 80px;
 }
+
+/* ESTILO DE FORMULARIO */
+
 .tamaño{
+    margin: 5px;
+    margin-right: 35px;
+    padding: 10px;
+    background: var(--bkg-color_7);
+    font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    width: 400px;
+    height: 100%;
+}
+.tamaño-form{
+    padding: 0px;
+    background: #fff;
+    margin-top: 40px;
+    width:400px;
+}
+.form-label{
+    font-weight: 600;
+    cursor: pointer;
+}
+.grupo__input-icon{
+    position: relative;
+    margin-bottom: 5px;
+}
+.form-input{
+    font-size: 18px;
+    text-align: center;
+    height: 35px;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    transition: .3s ease all;
+    margin-bottom: 5px;
+}
+.form-input:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
+}
+.mensaje-error{
+    font-size: 18px;
+    line-height: 18px;
+    word-spacing: .5px;
+    margin-bottom: 0;
+    color: #bb1919;
+    display: none;
+}
+.mensaje-error-activo{
+    display: block;
+}
+.validacion-estado{
+    position: absolute;
+    right: 45px;
+    top: 12.5px;
+    font-size: 15px;
+    z-index: 100;
+    opacity: 0;
+}
+.error-enviar{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background: #f66060;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: none;
+}
+.error-enviar-activo{
+    display: block;
+}
+
+.error-enviar p {
+    font-size: 16px;
+    padding: 0 0;
+    margin: 0;
+}
+
+.grupo-correcto .validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+.grupo-incorrecto .validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+.grupo-incorrecto .form-input{
+    border: 3px solid #bb2929;
+}
+.tamaño-logo{
+    margin-right:35px ;
+    padding: 10px;
     margin: 5px;
     padding: 25px;
     background: var(--bkg-color_7);
     font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    width: 400px;
 }
 .mb-3{
     margin: 5px;
+    margin-bottom: 0px;
     padding: 2px;
     background: var(--bkg-color_7);
 }
+.mb-3-form-check{
+    margin: 5px;
+    margin-top: 0px;
+    padding: 2px;
+    background: var(--bkg-color_7);
+}
+.mb-3-form-check a{
+    color: #00d1ff;
+}
+.mb-3-form-check a{
+    font-size: 20px;
+    text-decoration: none;
+}
 .card_sect{
-   
     background: var(--bkg-color_7);
     padding: 5px;
     /*padding-left: 12px;
@@ -125,4 +251,12 @@ header{
 .card_sect .card img{
     height: 60px;
     /*width: 250;*/
+}
+.tamaño-footer{
+    width: 100%;
+    margin: 5px;
+    padding: 25px;
+    background: var(--bkg-color_7);
+    font-family: garamond,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
 }
